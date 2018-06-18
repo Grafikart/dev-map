@@ -1,8 +1,8 @@
 {
   "jobs": {
-    "Front-End developer": ["HTML", "JavaScript", "CSS", "SASS", "Webpack", "NodeJS"],
-    "French PHP developer": ["Symfony"],
-    "Wordpress developer": ["PHP"]
+    "Développeur Front-End": ["HTML", "JavaScript", "CSS", "SASS", "Webpack", "NodeJS", "Git", "FTP"],
+    "Développeur Back-end Symfony": ["Symfony", "Unix", "Git", "FTP"],
+    "Développeur WordPress": ["WordPress", "FTP", "MySQL"]
   },
   "technologies": [
     {
@@ -100,7 +100,7 @@
       ]
     },
     {
-      "name": "Wordpress",
+      "name": "WordPress",
       "type": "framework",
       "require": [
         "PHP"
@@ -302,7 +302,7 @@
       "name": "Wordplate",
       "type": "framework",
       "require": [
-        "Wordpress"
+        "WordPress"
       ]
     },
     {

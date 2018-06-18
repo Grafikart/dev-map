@@ -110,6 +110,17 @@ body, html {
   }
 }
 
+.link {
+  position: absolute;
+  color: inherit;
+  bottom: 10px;
+  left: 10px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 /* Graph
    ========================================================================== */
 .node {

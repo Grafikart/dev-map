@@ -54,6 +54,9 @@ export default class Graph {
       .forceSimulation()
       .force('charge', d3.forceManyBody().strength(-200))
       .force('center', d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2))
+      .force('radial', d3.forceRadial(100, window.innerWidth / 2, window.innerHeight / 2).strength(node => {
+        return this.isSource(node) ? 0.1 : 0
+      }))
       .force('collision', d3.forceCollide(this.radiusGenerator()))
       .force('link', d3.forceLink()
         .id((node: INode) => node.name)
@@ -107,7 +110,6 @@ export default class Graph {
         .on('click', this.events['click'])
     }
     // Let's simulate
-    this.simulation.alpha(1)
     this.simulation.alphaDecay(0.0228)
     this.simulation.nodes(nodes).on('tick', () => {
       nodeElements
@@ -118,8 +120,16 @@ export default class Graph {
         .attr('x2', link => link.source.x)
         .attr('y2', link => link.source.y)
     })
-    this.simulation.alphaTarget(0).restart()
     this.simulation.force('link').links(links)
+    // If a filter is active increase the radial force
+    if (nodes !== this.nodes) {
+      this.simulation.force('radial').strength(node => {
+        return this.isSourceOrIsolated(node) ? 0.01 : 0
+      })
+    }
+    if (this.simulation.alpha() !== 1) {
+      this.simulation.alpha(1).alphaTarget(0).restart()
+    }
     // Reset the view
     this.svg
       .transition()
@@ -130,23 +140,6 @@ export default class Graph {
       ).on('end', () => {
       this.svg.call(this.zoom)
     })
-
-    function dragstarted() {
-      if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-      d3.event.subject.fx = d3.event.subject.x;
-      d3.event.subject.fy = d3.event.subject.y;
-    }
-
-    function dragged() {
-      d3.event.subject.fx = d3.event.x;
-      d3.event.subject.fy = d3.event.y;
-    }
-
-    function dragended() {
-      if (!d3.event.active) simulation.alphaTarget(0);
-      d3.event.subject.fx = null;
-      d3.event.subject.fy = null;
-    }
 
     const dragDrop = d3.drag()
       .on('start', node => {
@@ -182,6 +175,15 @@ export default class Graph {
    * @return {boolean}
    */
   private isSource (node: INode): boolean {
+    return this.isSourceOrIsolated(node) && this.links.find(link => link.target === node) !== undefined
+  }
+
+  /**
+   * Is the node a source node (no requirements)
+   * @param {INode} node
+   * @return {boolean}
+   */
+  private isSourceOrIsolated (node: INode): boolean {
     return this.links.find(link => link.source === node) === undefined
   }
 
