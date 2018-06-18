@@ -2,6 +2,8 @@
 
 Ce dépôt est un "proof of concept" pour une représentation de l'apprentissage informatique. L'objectif est de montrer rapidement les technologies à apprendre pour un objectif précis
 
+[Demo live](https://grafikart.github.io/dev-map/) (ne surtout pas ouvrir avec l'inspecteur ouvert)
+
 ## 👬 Participer
 
 Si vous le souhaitez vous pouvez participer à ce projet de plusieurs façons :
