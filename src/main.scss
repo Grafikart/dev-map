@@ -1,0 +1,92 @@
+$node: #ff5f5f;
+$colors: language #294a66, tool #0060ca, framework #6a9c78;
+
+body, html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f6ff;
+  color: #617182;
+  overflow: hidden;
+}
+
+/* HEADER
+   ========================================================================== */
+.header {
+  height: 4rem;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 1px #126ad31a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+.header__jobs {
+  margin-left: auto;
+}
+
+.header__search {
+  padding: 11px 10px;
+  border: solid 1px #dfe7f3;
+}
+
+.header__btn {
+  background-color: #6861c3;
+  border: 1px solid #6861c3;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  user-select: none;
+  padding: 8px 20px;
+  font-size: .875rem;
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+  height: 38px;
+  vertical-align: middle;
+  font-weight: 300;
+  transition: box-shadow .3s ease;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 5px 10px #736cc766;
+  }
+}
+
+/* Graph
+   ========================================================================== */
+.node {
+  cursor: pointer;
+}
+
+.ring {
+  fill: #6ac6ff;
+  opacity: 0;
+  stroke-width: 2px;
+}
+
+.node:hover .ring {
+  opacity: 0.3;
+}
+
+.outline{
+  fill: $node;
+  stroke-width: 2px;
+  stroke: darken($node, 15);
+}
+
+@each $color in $colors {
+  .node-#{nth($color, 1)} .outline{
+    fill: nth($color, 2);
+    stroke-width: 2px;
+    stroke: darken(nth($color, 2), 15);
+  }
+}
+
+.links line {
+  stroke: #777;
+  stroke-width: 2px;
+}
