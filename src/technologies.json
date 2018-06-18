@@ -1,6 +1,8 @@
 {
   "jobs": {
-    "Front-End Developper": ["HTML", "JavaScript", "CSS", "SASS", "Webpack", "NodeJS"]
+    "Front-End developer": ["HTML", "JavaScript", "CSS", "SASS", "Webpack", "NodeJS"],
+    "French PHP developer": ["Symfony"],
+    "Wordpress developer": ["PHP"]
   },
   "technologies": [
     {
@@ -871,6 +873,7 @@
       "name": "Symfony",
       "type": "framework",
       "require": [
+        "MySQL",
         "Composer",
         "PHP"
       ]

@@ -33,15 +33,10 @@ const getDependencies = function (node: INode, links: ILink[], dependencies: INo
  * @param {ILink[]} links
  * @return {INodesLinks}
  */
-export const nodesWithDependencies = function (names: string[], nodes: INode[], links: ILink[]): INodesLinks {
+export const nodesWithDependencies = function (names: string[], nodes: INode[], links: ILink[]): INode[] {
   let filteredNodes = nodes.filter(node => names.includes(node.name))
   filteredNodes.forEach(node => {
     filteredNodes = [...filteredNodes, ...getDependencies(node, links)]
   })
-  filteredNodes = Array.from(new Set(filteredNodes))
-  let filteredLinks = links.filter(link => filteredNodes.includes(link.source) && filteredNodes.includes(link.target))
-  return {
-    nodes: filteredNodes,
-    links: filteredLinks
-  }
+  return Array.from(new Set(filteredNodes))
 }
