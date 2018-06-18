@@ -968,6 +968,68 @@
       "type": "tool",
       "require": [
       ]
+    },
+    {
+      "name": "C",
+      "type": "language",
+      "require": [
+        "Algorithmique"
+      ]
+    },
+    {
+      "name": "C++",
+      "type": "language",
+      "require": [
+        "Algorithmique"
+      ]
+    },
+    {
+      "name": "ExpressJS",
+      "type": "framework",
+      "require": [
+        "Algorithmique",
+        "NodeJS",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "AdonisJS",
+      "type": "framework",
+      "require": [
+        "Algorithmique",
+        "NodeJS",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "type": "tool",
+      "require": [
+        "Algorithmique",
+        "NodeJS",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "C#",
+      "type": "language",
+      "require": [
+        "Algorithmique"
+      ]
+    },
+    {
+      "name": "ASP.net",
+      "type": "framework",
+      "require": [
+        "C#"
+      ]
+    },
+    {
+      "name": "Java",
+      "type": "language",
+      "require": [
+        "Algorithmique"
+      ]
     }
   ]
 }
