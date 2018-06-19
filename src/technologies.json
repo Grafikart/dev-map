@@ -1042,6 +1042,43 @@
       "require": [
         "Algorithmique"
       ]
+    },
+    {
+      "name": "Slim",
+      "type": "framework",
+      "require": [
+        "PHP"
+      ]
+    },
+    {
+      "name": "Silex",
+      "type": "framework",
+      "require": [
+        "PHP"
+      ]
+    },
+    {
+      "name": "Lumen",
+      "type": "framework",
+      "require": [
+        "PHP"
+      ]
+    },
+    {
+      "name": "Validation",
+      "type": "library",
+      "require": [
+        "PHP",
+        "Composer"
+      ]
+    },
+    {
+      "name": "Faker",
+      "type": "library",
+      "require": [
+        "PHP",
+        "Composer"
+      ]
     }
   ]
 }
