@@ -1007,18 +1007,14 @@
       "name": "ExpressJS",
       "type": "framework",
       "require": [
-        "Algorithmique",
-        "NodeJS",
-        "JavaScript"
+        "NodeJS"
       ]
     },
     {
       "name": "AdonisJS",
       "type": "framework",
       "require": [
-        "Algorithmique",
-        "NodeJS",
-        "JavaScript"
+        "NodeJS"
       ]
     },
     {
