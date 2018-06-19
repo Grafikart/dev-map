@@ -135,6 +135,12 @@
       ]
     },
     {
+      "name": "Gravit Designer",
+      "type": "tool",
+      "require": [
+      ]
+    },
+    {
       "name": "CSS",
       "type": "language",
       "require": [
@@ -152,7 +158,20 @@
       "name": "Cordova",
       "type": "framework",
       "require": [
-        "NodeJS"
+        "NodeJS",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "Ionic",
+      "type": "framework",
+      "require": [
+        "NodeJS",
+        "HTML",
+        "CSS",
+        "JavaScript"
       ]
     },
     {
@@ -193,6 +212,13 @@
       "type": "library",
       "require": [
         "JavaScript"
+      ]
+    },
+    {
+      "name": "Goaccess",
+      "type": "tool",
+      "require": [
+        "Unix"
       ]
     },
     {
@@ -251,6 +277,7 @@
       "name": "SSH",
       "type": "tool",
       "require": [
+        "Unix"
       ]
     },
     {
@@ -622,6 +649,7 @@
       "name": "Apache",
       "type": "tool",
       "require": [
+        "Unix"
       ]
     },
     {
@@ -678,6 +706,15 @@
       "type": "framework",
       "require": [
         "React"
+      ]
+    },
+    {
+      "name": "NativeScript",
+      "type": "framework",
+      "require": [
+        "Angular",
+        "VueJS",
+        "JavaScript"
       ]
     },
     {
@@ -781,7 +818,8 @@
       "name": "Angular",
       "type": "framework",
       "require": [
-        "JavaScript"
+        "JavaScript",
+        "Typescript"
       ]
     },
     {
@@ -875,7 +913,9 @@
       "require": [
         "SQL",
         "Composer",
-        "PHP"
+        "PHP",
+        "YAML",
+        "Xml"
       ]
     },
     {
@@ -965,6 +1005,12 @@
       ]
     },
     {
+      "name": "PhpMyAdmin",
+      "type": "tool",
+      "require": [
+      ]
+    },
+    {
       "name": "Sinatra",
       "type": "library",
       "require": [
@@ -1000,7 +1046,8 @@
       "name": "C++",
       "type": "language",
       "require": [
-        "Algorithmique"
+        "Algorithmique",
+        "C"
       ]
     },
     {
@@ -1038,6 +1085,20 @@
     },
     {
       "name": "Java",
+      "type": "language",
+      "require": [
+        "Algorithmique"
+      ]
+    },
+    {
+      "name": "Kotlin",
+      "type": "language",
+      "require": [
+        "Algorithmique"
+      ]
+    },
+    {
+      "name": "NimLang",
       "type": "language",
       "require": [
         "Algorithmique"
