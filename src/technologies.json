@@ -812,14 +812,6 @@
       ]
     },
     {
-      "name": "Phinx",
-      "type": "library",
-      "require": [
-        "PHP",
-        "Composer"
-      ]
-    },
-    {
       "name": "Firebug",
       "type": "tool",
       "require": [
@@ -1041,6 +1033,21 @@
       "type": "language",
       "require": [
         "Algorithmique"
+      ]
+    },
+    {
+      "name": "Slim",
+      "type": "framework",
+      "require": [
+        "Composer",
+	"PHP"
+      ]
+    },
+    {
+      "name": "Lumen",
+      "type": "framework",
+      "require": [
+        "PHP"
       ]
     }
   ]
