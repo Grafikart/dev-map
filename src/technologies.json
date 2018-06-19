@@ -812,14 +812,6 @@
       ]
     },
     {
-      "name": "Phinx",
-      "type": "library",
-      "require": [
-        "PHP",
-        "Composer"
-      ]
-    },
-    {
       "name": "Firebug",
       "type": "tool",
       "require": [
@@ -1047,14 +1039,8 @@
       "name": "Slim",
       "type": "framework",
       "require": [
-        "PHP"
-      ]
-    },
-    {
-      "name": "Silex",
-      "type": "framework",
-      "require": [
-        "PHP"
+        "Composer",
+	"PHP"
       ]
     },
     {
@@ -1062,22 +1048,6 @@
       "type": "framework",
       "require": [
         "PHP"
-      ]
-    },
-    {
-      "name": "Validation",
-      "type": "library",
-      "require": [
-        "PHP",
-        "Composer"
-      ]
-    },
-    {
-      "name": "Faker",
-      "type": "library",
-      "require": [
-        "PHP",
-        "Composer"
       ]
     }
   ]
