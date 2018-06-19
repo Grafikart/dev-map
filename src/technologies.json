@@ -1024,11 +1024,7 @@
     {
       "name": "MongoDB",
       "type": "tool",
-      "require": [
-        "Algorithmique",
-        "NodeJS",
-        "JavaScript"
-      ]
+      "require": []
     },
     {
       "name": "C#",
