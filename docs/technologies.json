@@ -122,6 +122,21 @@
       ]
     },
     {
+      "name": "VueResource",
+      "type": "library",
+      "require": [
+        "VueJS"
+      ]
+    },
+    {
+      "name": "Vuetify",
+      "type": "framework",
+      "require": [
+        "VueJS",
+        "CSS"
+      ]
+    },
+    {
       "name": "NodeWebkit",
       "type": "library",
       "require": [
