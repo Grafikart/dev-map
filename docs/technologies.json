@@ -1,8 +1,8 @@
 {
   "jobs": {
-    "Développeur Front-End": ["HTML", "JavaScript", "CSS", "SASS", "Webpack", "NodeJS", "Git", "FTP"],
+    "Développeur Front-End": ["HTML", "JavaScript", "SASS", "Webpack", "Git", "FTP", "Photoshop"],
     "Développeur Back-end Symfony": ["Symfony", "Unix", "Git", "FTP"],
-    "Développeur WordPress": ["WordPress", "FTP", "MySQL"]
+    "Développeur WordPress": ["WordPress", "FTP", "SQL"]
   },
   "technologies": [
     {
@@ -281,7 +281,7 @@
       "name": "MariaDB",
       "type": "tool",
       "require": [
-        "MySQL"
+        "SQL"
       ]
     },
     {
@@ -744,7 +744,7 @@
       "name": "Ruby on Rails",
       "type": "framework",
       "require": [
-        "MySQL",
+        "SQL",
         "Ruby"
       ]
     },
@@ -873,7 +873,7 @@
       "name": "Symfony",
       "type": "framework",
       "require": [
-        "MySQL",
+        "SQL",
         "Composer",
         "PHP"
       ]
@@ -892,10 +892,30 @@
       ]
     },
     {
-      "name": "MySQL",
-      "type": "tool",
+      "name": "SQL",
+      "type": "language",
       "require": [
       ]
+    },
+    {
+      "name": "MySQL",
+      "type": "tool",
+      "require": ["SQL"]
+    },
+    {
+      "name": "MariaDB",
+      "type": "tool",
+      "require": ["SQL"]
+    },
+    {
+      "name": "PostgreSQL",
+      "type": "tool",
+      "require": ["SQL"]
+    },
+    {
+      "name": "SQLite",
+      "type": "tool",
+      "require": ["SQL"]
     },
     {
       "name": "SourceTree",

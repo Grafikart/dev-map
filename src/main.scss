@@ -110,6 +110,12 @@ body, html {
   }
 }
 
+.footer__legend.is-root::before{
+  background-color: #000;
+  border-color: #000;
+  color: #000;
+}
+
 .link {
   position: absolute;
   color: inherit;
