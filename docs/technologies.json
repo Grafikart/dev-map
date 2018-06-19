@@ -1,8 +1,8 @@
 {
   "jobs": {
     "Développeur Front-End": ["HTML", "JavaScript", "SASS", "Webpack", "Git", "FTP", "Photoshop"],
-    "Développeur Back-end Symfony": ["Symfony", "Unix", "Git", "FTP"],
-    "Développeur WordPress": ["WordPress", "FTP", "SQL"]
+    "Développeur Back-end Symfony": ["Symfony", "Unix", "Git", "FTP", "SSH"],
+    "Développeur WordPress": ["WordPress", "FTP", "SQL", "CSS", "SSH"]
   },
   "technologies": [
     {
@@ -987,6 +987,60 @@
       "name": "Unix",
       "type": "tool",
       "require": [
+      ]
+    },
+    {
+      "name": "C",
+      "type": "language",
+      "require": [
+        "Algorithmique"
+      ]
+    },
+    {
+      "name": "C++",
+      "type": "language",
+      "require": [
+        "Algorithmique"
+      ]
+    },
+    {
+      "name": "ExpressJS",
+      "type": "framework",
+      "require": [
+        "NodeJS"
+      ]
+    },
+    {
+      "name": "AdonisJS",
+      "type": "framework",
+      "require": [
+        "NodeJS"
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "type": "tool",
+      "require": []
+    },
+    {
+      "name": "C#",
+      "type": "language",
+      "require": [
+        "Algorithmique"
+      ]
+    },
+    {
+      "name": "ASP.net",
+      "type": "framework",
+      "require": [
+        "C#"
+      ]
+    },
+    {
+      "name": "Java",
+      "type": "language",
+      "require": [
+        "Algorithmique"
       ]
     }
   ]
