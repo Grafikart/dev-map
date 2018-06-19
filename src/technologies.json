@@ -1,8 +1,8 @@
 {
   "jobs": {
     "Développeur Front-End": ["HTML", "JavaScript", "SASS", "Webpack", "Git", "FTP", "Photoshop"],
-    "Développeur Back-end Symfony": ["Symfony", "Unix", "Git", "FTP"],
-    "Développeur WordPress": ["WordPress", "FTP", "SQL"]
+    "Développeur Back-end Symfony": ["Symfony", "Unix", "Git", "FTP", "SSH"],
+    "Développeur WordPress": ["WordPress", "FTP", "SQL", "CSS", "SSH"]
   },
   "technologies": [
     {
