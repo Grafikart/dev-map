@@ -1,8 +1,28 @@
 {
   "jobs": {
-    "Développeur Front-End": ["HTML", "JavaScript", "SASS", "Webpack", "Git", "FTP", "Photoshop"],
-    "Développeur Back-end Symfony": ["Symfony", "Unix", "Git", "FTP", "SSH"],
-    "Développeur WordPress": ["WordPress", "FTP", "SQL", "CSS", "SSH"]
+    "Développeur Front-End": [
+      "HTML",
+      "JavaScript",
+      "SASS",
+      "Webpack",
+      "Git",
+      "FTP",
+      "Photoshop"
+    ],
+    "Développeur Back-end Symfony": [
+      "Symfony",
+      "Unix",
+      "Git",
+      "FTP",
+      "SSH"
+    ],
+    "Développeur WordPress": [
+      "WordPress",
+      "FTP",
+      "SQL",
+      "CSS",
+      "SSH"
+    ]
   },
   "technologies": [
     {
@@ -43,8 +63,7 @@
     {
       "name": "Antergos",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "PHPUnit",
@@ -70,8 +89,7 @@
     {
       "name": "Sublime Text",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Fail2ban",
@@ -83,14 +101,12 @@
     {
       "name": "Windows",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "XML",
       "type": "language",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Xdebug",
@@ -122,6 +138,13 @@
       ]
     },
     {
+      "name": "VueResource",
+      "type": "library",
+      "require": [
+        "VueJS"
+      ]
+    },
+    {
       "name": "NodeWebkit",
       "type": "library",
       "require": [
@@ -131,8 +154,7 @@
     {
       "name": "Illustrator",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "CSS",
@@ -180,8 +202,7 @@
     {
       "name": "YAML",
       "type": "language",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Webpack",
@@ -193,8 +214,7 @@
     {
       "name": "Google Chrome",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "MobX",
@@ -241,26 +261,22 @@
     {
       "name": "Notepad++",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Visual Studio Code",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "IntelliJ IDEA",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "PayPal",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "SSH",
@@ -272,26 +288,22 @@
     {
       "name": "Ngrok",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "InDesign",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Chrome",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Adobe Premiere Pro",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "MariaDB",
@@ -345,8 +357,7 @@
     {
       "name": "VirtualBox",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Browserify",
@@ -358,14 +369,12 @@
     {
       "name": "SVG",
       "type": "language",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Photoshop",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Compass",
@@ -392,8 +401,7 @@
     {
       "name": "Demo2",
       "type": null,
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "PostCSS",
@@ -405,8 +413,7 @@
     {
       "name": "Slides.com",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Zend Expressive",
@@ -454,14 +461,12 @@
     {
       "name": "RSS",
       "type": "language",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Flash",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "i3wm",
@@ -508,14 +513,12 @@
     {
       "name": "Postman",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "FTP",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Ansible",
@@ -534,8 +537,7 @@
     {
       "name": "Brackets",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "VueX",
@@ -547,8 +549,7 @@
     {
       "name": "DeepIn",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Ungit",
@@ -619,20 +620,17 @@
     {
       "name": "Affinity Designer",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Atom",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "WebRTC",
       "type": "framework",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Apache",
@@ -687,8 +685,7 @@
     {
       "name": "Internet Explorer",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "ReactNative",
@@ -707,14 +704,12 @@
     {
       "name": "PHPStorm",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Algorithmique",
       "type": "language",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "VueJS",
@@ -726,8 +721,7 @@
     {
       "name": "Dploy",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Maildev",
@@ -753,8 +747,7 @@
     {
       "name": "Komodo IDE",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "JavaScript",
@@ -811,8 +804,7 @@
     {
       "name": "Git",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "GitKraken",
@@ -846,32 +838,27 @@
     {
       "name": "Firebug",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Merise",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "After Effects",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "HTML",
       "type": "language",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Stripe",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "TypeScript",
@@ -883,8 +870,7 @@
     {
       "name": "REST",
       "type": "framework",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Vagrant",
@@ -913,34 +899,40 @@
     {
       "name": "MacOs",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "SQL",
       "type": "language",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "MySQL",
       "type": "tool",
-      "require": ["SQL"]
+      "require": [
+        "SQL"
+      ]
     },
     {
       "name": "MariaDB",
       "type": "tool",
-      "require": ["SQL"]
+      "require": [
+        "SQL"
+      ]
     },
     {
       "name": "PostgreSQL",
       "type": "tool",
-      "require": ["SQL"]
+      "require": [
+        "SQL"
+      ]
     },
     {
       "name": "SQLite",
       "type": "tool",
-      "require": ["SQL"]
+      "require": [
+        "SQL"
+      ]
     },
     {
       "name": "SourceTree",
@@ -952,14 +944,12 @@
     {
       "name": "Nodepad++",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Trello",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Avocode",
@@ -999,20 +989,17 @@
     {
       "name": "Netbeans",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Ubuntu",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "Unix",
       "type": "tool",
-      "require": [
-      ]
+      "require": []
     },
     {
       "name": "C",
