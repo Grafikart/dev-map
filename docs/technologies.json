@@ -587,6 +587,22 @@
       ]
     },
     {
+      "name": "Slim",
+      "type": "framework",
+      "require": [
+        "Composer",
+        "PHP"
+      ]
+    },
+    {
+      "name": "Lumen",
+      "type": "framework",
+      "require": [
+        "PHP",
+        "Composer"
+      ]
+    },
+    {
       "name": "Laravel",
       "type": "framework",
       "require": [
@@ -776,7 +792,7 @@
       "name": "Coda",
       "type": "tool",
       "require": [
-        "MacOs"
+        "MacOS"
       ]
     },
     {
@@ -828,19 +844,6 @@
       ]
     },
     {
-      "name": "Phinx",
-      "type": "library",
-      "require": [
-        "PHP",
-        "Composer"
-      ]
-    },
-    {
-      "name": "Firebug",
-      "type": "tool",
-      "require": []
-    },
-    {
       "name": "Merise",
       "type": "tool",
       "require": []
@@ -853,11 +856,6 @@
     {
       "name": "HTML",
       "type": "language",
-      "require": []
-    },
-    {
-      "name": "Stripe",
-      "type": "tool",
       "require": []
     },
     {
@@ -897,7 +895,7 @@
       ]
     },
     {
-      "name": "MacOs",
+      "name": "MacOS",
       "type": "tool",
       "require": []
     },
