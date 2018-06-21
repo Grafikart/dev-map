@@ -135,12 +135,6 @@
       ]
     },
     {
-      "name": "Gravit Designer",
-      "type": "tool",
-      "require": [
-      ]
-    },
-    {
       "name": "CSS",
       "type": "language",
       "require": [
@@ -159,8 +153,6 @@
       "type": "framework",
       "require": [
         "NodeJS",
-        "HTML",
-        "CSS",
         "JavaScript"
       ]
     },
@@ -168,10 +160,7 @@
       "name": "Ionic",
       "type": "framework",
       "require": [
-        "NodeJS",
-        "HTML",
-        "CSS",
-        "JavaScript"
+        "TypeScript"
       ]
     },
     {
@@ -225,7 +214,7 @@
       "name": "Kibana",
       "type": "tool",
       "require": [
-        "Unix"
+        "Elasticsearch"
       ]
     },
     {
@@ -713,8 +702,6 @@
       "type": "framework",
       "require": [
         "Angular",
-        "VueJS",
-        "JavaScript"
       ]
     },
     {
@@ -818,8 +805,7 @@
       "name": "Angular",
       "type": "framework",
       "require": [
-        "JavaScript",
-        "Typescript"
+        "TypeScript"
       ]
     },
     {
@@ -914,8 +900,7 @@
         "SQL",
         "Composer",
         "PHP",
-        "YAML",
-        "Xml"
+        "YAML"
       ]
     },
     {
@@ -1005,12 +990,6 @@
       ]
     },
     {
-      "name": "PhpMyAdmin",
-      "type": "tool",
-      "require": [
-      ]
-    },
-    {
       "name": "Sinatra",
       "type": "library",
       "require": [
@@ -1092,13 +1071,6 @@
     },
     {
       "name": "Kotlin",
-      "type": "language",
-      "require": [
-        "Algorithmique"
-      ]
-    },
-    {
-      "name": "NimLang",
       "type": "language",
       "require": [
         "Algorithmique"
