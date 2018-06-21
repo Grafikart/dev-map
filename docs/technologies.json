@@ -1,9 +1,28 @@
 {
   "jobs": {
-    "Développeur Front-End": ["HTML", "JavaScript", "SASS", "Webpack", "Git", "FTP", "Photoshop"],
-    "Développeur Back-end Symfony": ["Symfony", "Unix", "Git", "FTP", "SSH"],
-    "Développeur WordPress": ["WordPress", "FTP", "SQL", "CSS", "SSH"],
-    "Data analyst": ["TensorFlow", "Python"]
+    "Développeur Front-End": [
+      "HTML",
+      "JavaScript",
+      "SASS",
+      "Webpack",
+      "Git",
+      "FTP",
+      "Photoshop"
+    ],
+    "Développeur Back-end Symfony": [
+      "Symfony",
+      "Unix",
+      "Git",
+      "FTP",
+      "SSH"
+    ],
+    "Développeur WordPress": [
+      "WordPress",
+      "FTP",
+      "SQL",
+      "CSS",
+      "SSH"
+    ]
   },
   "technologies": [
     {
@@ -878,9 +897,7 @@
     {
       "name": "MacOS",
       "type": "tool",
-      "require": [
-        "Unix"
-      ]
+      "require": []
     },
     {
       "name": "SQL",
@@ -1044,21 +1061,5 @@
         "Algorithmique"
       ]
     }
-    
-    {
-      "name": "J2E",
-      "type": "framework",
-      "require": [
-        "Java"
-      ]
-    },
-
-    {
-      "name": "TensorFlow",
-      "type": "framework",
-      "require": [
-        
-      ]
-    },
   ]
 }
