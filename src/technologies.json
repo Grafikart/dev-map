@@ -157,6 +157,7 @@
     {
       "name": "VueResource",
       "type": "library",
+      "desc": null
       "require": [
         "VueJS"
       ]
@@ -1226,6 +1227,7 @@
     {
       "name": "Kotlin",
       "type": "language",
+      "desc": null,
       "require": [
         "Algorithmique"
       ]
