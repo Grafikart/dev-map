@@ -4,7 +4,8 @@ export const dataToNodes = function (data: IData): INode[] {
   return data.technologies.map(function (tech) {
     return {
       name: tech.name,
-      type: tech.type
+      type: tech.type,
+      desc: tech.desc
     }
   })
 }

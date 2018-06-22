@@ -16,7 +16,7 @@ export default class Graph {
     [type: string]: (node: INode) => void
   } = {}
 
-  constructor (nodes: INode[], links: ILink[]) {
+  constructor(nodes: INode[], links: ILink[]) {
     this.links = links
     this.nodes = nodes
 
@@ -70,7 +70,7 @@ export default class Graph {
    * @param {INode[]} nodes
    * @param {ILink[]} links
    */
-  public build (nodes: INode[] = this.nodes) {
+  public build(nodes: INode[] = this.nodes) {
     let links = this.links.filter(link => nodes.includes(link.source) && nodes.includes(link.target))
     let linkElements = this.linkGroup
       .selectAll('line')
@@ -80,6 +80,10 @@ export default class Graph {
       .enter().append('line')
       .attr('marker-end', 'url(#triangle)')
       .merge(linkElements)
+    let div = d3.select("body")
+      .append("div")
+      .attr("class", "tooltip")
+      .style("opacity", 0)
     let nodeElements = this.nodeGroup
       .selectAll('g')
       .data(nodes, (node: INode) => node.name)
@@ -105,9 +109,33 @@ export default class Graph {
       .attr('font-size', '10px')
       .attr('text-anchor', 'middle')
       .attr('dy', 4)
+    nodeElements
+      .on('mouseover', (node)=>{
+        if(node.desc !== null){
+          console.log(div)
+          div.transition()
+            .duration(200)
+            .style("opacity", .9)
+          div.html(node.desc)
+            .style("left", (d3.event.pageX) + "px")    
+            .style("top", (d3.event.pageY - 28) + "px");
+        }
+      })
+    nodeElements
+      .on('mouseout', (node)=>{
+        div.transition()
+          .duration(200)
+          .style("opacity", 0)
+      })
+    let onClickCb = () => {
+      this.events['click']
+    }
     if (this.events['click'] !== undefined) {
       nodeElements
-        .on('click', this.events['click'])
+        .on('click', (data)=>{
+           div.remove()
+          this.events['click'](data)
+        })
     }
     // Let's simulate
     this.simulation.alphaDecay(0.0228)
@@ -138,8 +166,8 @@ export default class Graph {
         .translate(0, 0)
         .scale(1)
       ).on('end', () => {
-      this.svg.call(this.zoom)
-    })
+        this.svg.call(this.zoom)
+      })
 
     const dragDrop = d3.drag()
       .on('start', node => {
@@ -165,7 +193,7 @@ export default class Graph {
   /**
    * @param {(node: INode) => void} cb
    */
-  public onNodeClick (cb: (node: INode) => void) {
+  public onNodeClick(cb: (node: INode) => void) {
     this.events['click'] = cb
   }
 
@@ -174,7 +202,7 @@ export default class Graph {
    * @param {INode} node
    * @return {boolean}
    */
-  private isSource (node: INode): boolean {
+  private isSource(node: INode): boolean {
     return this.isSourceOrIsolated(node) && this.links.find(link => link.target === node) !== undefined
   }
 
@@ -183,7 +211,7 @@ export default class Graph {
    * @param {INode} node
    * @return {boolean}
    */
-  private isSourceOrIsolated (node: INode): boolean {
+  private isSourceOrIsolated(node: INode): boolean {
     return this.links.find(link => link.source === node) === undefined
   }
 
@@ -191,7 +219,7 @@ export default class Graph {
    * @param {number} incr
    * @return {(node: any) => number}
    */
-  private radiusGenerator (incr = 0) {
+  private radiusGenerator(incr = 0) {
     return (node: any): number => {
       let ratio = 1
       if (node.type === 'language')
