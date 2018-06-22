@@ -3,6 +3,7 @@ import { SimulationNodeDatum } from 'd3-force'
 export interface ITechnology {
   name: string,
   type: string,
+  desc: string,
   require: string[]
 }
 
@@ -17,7 +18,8 @@ export interface IData {
 
 export interface INode extends SimulationNodeDatum{
   name: string,
-  type: string
+  type: string,
+  desc: string
 }
 
 export interface ILink {
