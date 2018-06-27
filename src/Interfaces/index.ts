@@ -1,9 +1,16 @@
 import { SimulationNodeDatum } from 'd3-force'
 
+export interface ITutorial {
+  name: string
+  url: string
+}
+
 export interface ITechnology {
   name: string,
   type: string,
+  desc: string,
   require: string[]
+  tutorials?: ITutorial[],
 }
 
 export interface IJobs {
@@ -17,7 +24,8 @@ export interface IData {
 
 export interface INode extends SimulationNodeDatum{
   name: string,
-  type: string
+  type: string,
+  desc: string
 }
 
 export interface ILink {

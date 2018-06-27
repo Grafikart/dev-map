@@ -84,14 +84,14 @@ body, html {
 .footer {
   position: absolute;
   bottom: 10px;
-  right: 10px;
+  right: 30px;
 }
 
 .footer__legend {
   display: inline-block;
   margin-left: 10px;
   &::before {
-    content:'';
+    content: '';
     display: inline-block;
     vertical-align: middle;
     background-color: $node;
@@ -103,14 +103,14 @@ body, html {
 }
 
 @each $color in $colors {
-  .footer__legend.is-#{nth($color, 1)}::before{
+  .footer__legend.is-#{nth($color, 1)}::before {
     background-color: nth($color, 2);
     border-color: darken(nth($color, 2), 15);
     color: darken(nth($color, 2), 15);
   }
 }
 
-.footer__legend.is-root::before{
+.footer__legend.is-root::before {
   background-color: #000;
   border-color: #000;
   color: #000;
@@ -120,7 +120,7 @@ body, html {
   position: absolute;
   color: inherit;
   bottom: 10px;
-  left: 10px;
+  left: 30px;
 
   &:hover {
     text-decoration: none;
@@ -143,14 +143,14 @@ body, html {
   opacity: 0.3;
 }
 
-.outline{
+.outline {
   fill: $node;
   stroke-width: 2px;
   stroke: darken($node, 15);
 }
 
 @each $color in $colors {
-  .node-#{nth($color, 1)} .outline{
+  .node-#{nth($color, 1)} .outline {
     fill: nth($color, 2);
     stroke-width: 2px;
     stroke: darken(nth($color, 2), 15);
@@ -170,4 +170,19 @@ body, html {
 
 svg {
   cursor: all-scroll;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  color: black;
+  width: 160px;
+  height: auto;
+  padding: 5px;
+  font: 12px sans-serif;
+  background: rgba(#f0f6ff, .9);
+  border: 1px solid grey;
+  border-radius: 8px;
+  pointer-events: none;
+  transform: translate3d(-50%, -100%, 0);
 }
