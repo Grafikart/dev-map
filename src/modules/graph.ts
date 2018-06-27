@@ -80,6 +80,10 @@ export default class Graph {
       .enter().append('line')
       .attr('marker-end', 'url(#triangle)')
       .merge(linkElements)
+    let div = d3.select('body')
+      .append('div')
+      .attr('class', 'tooltip')
+      .style('opacity', 0)
     let nodeElements = this.nodeGroup
       .selectAll('g')
       .data(nodes, (node: INode) => node.name)
@@ -105,9 +109,32 @@ export default class Graph {
       .attr('font-size', '10px')
       .attr('text-anchor', 'middle')
       .attr('dy', 4)
+    nodeElements
+      .on('mouseover', (node) => {
+        if (node.desc !== null) {
+          div.transition()
+            .duration(200)
+            .style('opacity', 1)
+          div.html(node.desc)
+            .style('left', (d3.event.pageX) + 'px')
+            .style('top', (d3.event.pageY - 10) + 'px');
+        }
+      })
+    nodeElements
+      .on('mouseout', (node) => {
+        div.transition()
+          .duration(200)
+          .style('opacity', 0)
+      })
+    let onClickCb = () => {
+      this.events['click']
+    }
     if (this.events['click'] !== undefined) {
       nodeElements
-        .on('click', this.events['click'])
+        .on('click', (data) => {
+          div.remove()
+          this.events['click'](data)
+        })
     }
     // Let's simulate
     this.simulation.alphaDecay(0.0228)
