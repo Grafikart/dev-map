@@ -239,6 +239,24 @@
       ]
     },
     {
+      "name": "Symfony",
+      "type": "framework",
+      "description": "Framework php très populaire pour le développement d'applications web",
+      "tutorials": [],
+      "require": [
+        "PHP"
+      ]
+    },
+    {
+      "name": "Laravel",
+      "type": "framework",
+      "description": "Framework php très populaire pour le développement d'applications web",
+      "tutorials": [],
+      "require": [
+        "PHP"
+      ]
+    },
+    {
       "name": "jQuery",
       "type": "library",
       "description": "",
