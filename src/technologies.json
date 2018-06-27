@@ -28,13 +28,13 @@
     {
       "name": "SASS",
       "type": "language",
-      "description": "Préprocesseur CSS",
       "tutorials": [
         {
           "name": "CSS Maintenable avec SASS et Compass",
           "url": "https://www.grafikart.fr/formations/sass-compass"
         }
       ],
+      "desc": "Syntactically Awesome StyleSheets est un langage de génération de feuilles de style",
       "require": [
         "CSS"
       ]
@@ -42,8 +42,7 @@
     {
       "name": "postfix",
       "type": "tool",
-      "description": "Serveur de messagerie électronique",
-      "tutorials": [],
+      "desc": "Postfix est un serveur de messagerie électronique",
       "require": [
         "Unix"
       ]
@@ -51,8 +50,7 @@
     {
       "name": "Jade",
       "type": "language",
-      "description": "Moteur de tempate",
-      "tutorials": [],
+      "desc": "Jade est un moteur de template pour node",
       "require": [
         "HTML"
       ]
@@ -60,8 +58,7 @@
     {
       "name": "mjml",
       "type": "language",
-      "description": "Framework permettant de rédiger des emails responsives",
-      "tutorials": [],
+      "desc": "MJML est un language de développement d'email responsive",
       "require": [
         "HTML"
       ]
@@ -69,8 +66,7 @@
     {
       "name": "Debian",
       "type": "tool",
-      "description": "Distribution Linux",
-      "tutorials": [],
+      "desc": "Debian est un système d'exploitation et une distribution de logiciels libres",
       "require": [
         "Unix"
       ]
@@ -78,15 +74,13 @@
     {
       "name": "Antergos",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "Antergos est une distribution Linux basée sur ArchLinux",
       "require": []
     },
     {
       "name": "PHPUnit",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "PHPUnit est un framework open source de tests unitaires dédié au langage de programmation PHP",
       "require": [
         "PHP"
       ]
@@ -94,8 +88,7 @@
     {
       "name": "Capistrano",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "Capistrano est un outil open source pour exécuter des scripts sur plusieurs serveurs",
       "require": [
         "Ruby"
       ]
@@ -103,8 +96,7 @@
     {
       "name": "Composer",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "Composer est un gestionnaire de dépendances libre écrit en PHP",
       "require": [
         "PHP"
       ]
@@ -112,15 +104,13 @@
     {
       "name": "Sublime Text",
       "type": "tool",
-      "description": "Editeur de texte minimaliste et rapide",
-      "tutorials": [],
+      "desc": "Sublime Text est un éditeur de texte",
       "require": []
     },
     {
       "name": "Fail2ban",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "Fail2ban est un framework de prévention contre les intrusions, écrit en Python",
       "require": [
         "Unix"
       ]
@@ -128,22 +118,19 @@
     {
       "name": "Windows",
       "type": "tool",
-      "description": "Fenêtre",
-      "tutorials": [],
+      "desc": "Windows, c'est Windows ! :-)",
       "require": []
     },
     {
       "name": "XML",
       "type": "language",
-      "description": "Le XML est un language permettant de stocker des informations structurées",
-      "tutorials": [],
+      "desc": "XML ou eXtensible Markup Language est un langage informatique de balisage générique",
       "require": []
     },
     {
       "name": "Xdebug",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "Xdebug est une extension pour PHP apportant des fonctions de débogage et de profilage",
       "require": [
         "PHP"
       ]
@@ -151,8 +138,7 @@
     {
       "name": "WordPress",
       "type": "framework",
-      "description": "WordPress est un système de gestion de contenu très populaire",
-      "tutorials": [],
+      "desc": "WordPress est un système de gestion de contenu gratuit, libre et open-source",
       "require": [
         "PHP"
       ]
@@ -160,8 +146,7 @@
     {
       "name": "Twig",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": "Twig est un moteur de templates pour le langage de programmation PHP",
       "require": [
         "Composer",
         "PHP"
@@ -170,8 +155,7 @@
     {
       "name": "VueRouter",
       "type": "library",
-      "description": "",
-      "tutorials": [],
+      "desc": "VueRouter est un routeur pour les outils VueJS",
       "require": [
         "VueJS"
       ]
@@ -179,8 +163,7 @@
     {
       "name": "VueResource",
       "type": "library",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "VueJS"
       ]
@@ -188,8 +171,7 @@
     {
       "name": "NodeWebkit",
       "type": "library",
-      "description": "",
-      "tutorials": [],
+      "desc": "Node Webkit est un moteur d'éxécution basé sur Chromium et NodeJS",
       "require": [
         "NodeJS"
       ]
@@ -197,15 +179,13 @@
     {
       "name": "Illustrator",
       "type": "tool",
-      "description": "Logiciel de dessin vectoriel développé par Adobe",
-      "tutorials": [],
+      "desc": "Illustrator est un logiciel de création graphique vectorielle",
       "require": []
     },
     {
       "name": "CSS",
       "type": "language",
-      "description": "Language utilisé pout la définition des styles d'une page web",
-      "tutorials": [],
+      "desc": "Les feuilles de style en cascade1, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML",
       "require": [
         "HTML"
       ]
@@ -213,8 +193,7 @@
     {
       "name": "jQuery UI",
       "type": "library",
-      "description": "",
-      "tutorials": [],
+      "desc": "jQuery UI est une collection de widgets, effets visuels et thèmes implémentés avec jQuery, des feuilles de style en cascade, et du HTML",
       "require": [
         "jQuery"
       ]
@@ -222,8 +201,7 @@
     {
       "name": "Cordova",
       "type": "framework",
-      "description": "Framework utilisé pour le développement d'applications natives grâce aux languages du web",
-      "tutorials": [],
+      "desc": "Apache Cordova est un framework de développement mobile open-source",
       "require": [
         "NodeJS",
         "JavaScript"
@@ -241,8 +219,7 @@
     {
       "name": "jQuery",
       "type": "library",
-      "description": "",
-      "tutorials": [],
+      "desc": "jQuery est une bibliothèque JavaScript libre et multiplateforme créée pour faciliter l'écriture de scripts côté client dans le code HTML des pages web",
       "require": [
         "JavaScript"
       ]
@@ -250,8 +227,7 @@
     {
       "name": "NodeJS",
       "type": "tool",
-      "description": "Librairie facilitant la manipulation du DOM",
-      "tutorials": [],
+      "desc": "Node.js est une plateforme logicielle libre et événementielle en JavaScript",
       "require": [
         "JavaScript"
       ]
@@ -259,15 +235,13 @@
     {
       "name": "YAML",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": "YAML Ain't Markup Language dans sa version 1.1, est un format de représentation de données par sérialisation Unicode",
       "require": []
     },
     {
       "name": "Webpack",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "Webpack est un packager open-source pour JavaScript",
       "require": [
         "NodeJS"
       ]
@@ -275,15 +249,13 @@
     {
       "name": "Google Chrome",
       "type": "tool",
-      "description": "Chrome est le navigateur de Google",
-      "tutorials": [],
+      "desc": "Chrome est un navigateur web propriétaire développé par Google basé sur le projet libre Chromium",
       "require": []
     },
     {
       "name": "MobX",
       "type": "library",
-      "description": "",
-      "tutorials": [],
+      "desc": "MobX est une solution de gestion d'état simple et évolutive",
       "require": [
         "JavaScript"
       ]
@@ -291,8 +263,7 @@
     {
       "name": "Goaccess",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "Kibana est un greffon de visualisation de données pour Elasticsearch",
       "require": [
         "Unix"
       ]
@@ -309,8 +280,7 @@
     {
       "name": "Materialize",
       "type": "framework",
-      "description": "Framework CSS reprenant la charte de Google Material Design",
-      "tutorials": [],
+      "desc": "Materialise est un framework CSS moderne et responsive basé sur Material Design by Google",
       "require": [
         "CSS"
       ]
@@ -318,8 +288,7 @@
     {
       "name": "Yarn",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "Yarn est un gestionnaire de package pour JavaScript",
       "require": [
         "NodeJS"
       ]
@@ -327,8 +296,7 @@
     {
       "name": "Foundation",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": "Foundation est un framework CSS responsive",
       "require": [
         "CSS"
       ]
@@ -336,36 +304,31 @@
     {
       "name": "Notepad++",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "Notepad++ est un éditeur de code source qui prend en charge plusieurs langages",
       "require": []
     },
     {
       "name": "Visual Studio Code",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "Visual Studio Code est un éditeur de code extensible développé par Microsoft pour Windows, Linux et OS X",
       "require": []
     },
     {
       "name": "IntelliJ IDEA",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "IntelliJ IDEA est un IDE Java commercial développé par JetBrains",
       "require": []
     },
     {
       "name": "PayPal",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "PayPal est un service de paiement en ligne qui permet de payer des achats, de recevoir des paiements, ou d’envoyer et de recevoir de l’argent",
       "require": []
     },
     {
       "name": "SSH",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "Secure Shell est à la fois un programme informatique et un protocole de communication sécurisé",
       "require": [
         "Unix"
       ]
@@ -373,36 +336,32 @@
     {
       "name": "Ngrok",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "Ngrok est un outil qui va vous permettre de partager simplement votre environnement de développement local",
       "require": []
     },
     {
       "name": "InDesign",
       "type": "tool",
-      "description": "",
+      "desc": "",
       "tutorials": [],
       "require": []
     },
     {
       "name": "Chrome",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "InDesign est un logiciel de PAO",
       "require": []
     },
     {
       "name": "Adobe Premiere Pro",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "Adobe Premiere Pro, anciennement appelé Adobe Premiere, est un logiciel de montage vidéo",
       "require": []
     },
     {
       "name": "MariaDB",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": "MariaDB est un système de gestion de base de données édité sous licence GPL",
       "require": [
         "SQL"
       ]
@@ -410,8 +369,7 @@
     {
       "name": "Less",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": "Less est un langage dynamique de génération de CSS conçu par Alexis Sellier",
       "require": [
         "CSS"
       ]
@@ -419,8 +377,7 @@
     {
       "name": "Angular JS",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": "AngularJS est un framework JavaScript libre et open source développé par Google",
       "require": [
         "JavaScript"
       ]
@@ -428,8 +385,7 @@
     {
       "name": "Wordplate",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": "Wordplate est un outil qui vous permet d'installer et de travailler avec Wordpress d'une manière plus organisée",
       "require": [
         "WordPress"
       ]
@@ -437,8 +393,7 @@
     {
       "name": "Nginx",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Unix"
       ]
@@ -446,8 +401,7 @@
     {
       "name": "Yeoman",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "NodeJS"
       ]
@@ -455,8 +409,7 @@
     {
       "name": "Grunt",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "NodeJS"
       ]
@@ -464,15 +417,13 @@
     {
       "name": "VirtualBox",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "Browserify",
       "type": "library",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "NodeJS"
       ]
@@ -480,22 +431,19 @@
     {
       "name": "SVG",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "Photoshop",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "Compass",
       "type": "library",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "SASS"
       ]
@@ -503,8 +451,7 @@
     {
       "name": "PHP",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Algorithmique",
         "HTML"
@@ -513,24 +460,15 @@
     {
       "name": "Meteor",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "NodeJS"
       ]
     },
     {
-      "name": "Demo2",
-      "type": null,
-      "description": "",
-      "tutorials": [],
-      "require": []
-    },
-    {
       "name": "PostCSS",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "CSS"
       ]
@@ -538,15 +476,13 @@
     {
       "name": "Slides.com",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "Zend Expressive",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Composer",
         "PHP"
@@ -555,8 +491,7 @@
     {
       "name": "Ruby",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Algorithmique"
       ]
@@ -564,8 +499,7 @@
     {
       "name": "ufw",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Unix"
       ]
@@ -573,8 +507,7 @@
     {
       "name": "SEO",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "HTML"
       ]
@@ -582,8 +515,7 @@
     {
       "name": "Python",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Algorithmique"
       ]
@@ -591,8 +523,7 @@
     {
       "name": "Parcel",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "NodeJS"
       ]
@@ -600,22 +531,19 @@
     {
       "name": "RSS",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "Flash",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "i3wm",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Unix"
       ]
@@ -623,8 +551,7 @@
     {
       "name": "Docker",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Unix"
       ]
@@ -632,8 +559,7 @@
     {
       "name": "Elasticsearch",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Unix"
       ]
@@ -641,8 +567,7 @@
     {
       "name": "Bower",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "NodeJS"
       ]
@@ -650,8 +575,7 @@
     {
       "name": "Redux",
       "type": "library",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "React"
       ]
@@ -659,8 +583,7 @@
     {
       "name": "lodash",
       "type": "library",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "JavaScript"
       ]
@@ -668,22 +591,19 @@
     {
       "name": "Postman",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "FTP",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "Ansible",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Unix"
       ]
@@ -691,8 +611,7 @@
     {
       "name": "Logstash",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Unix"
       ]
@@ -700,15 +619,13 @@
     {
       "name": "Brackets",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "VueX",
       "type": "library",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "VueJS"
       ]
@@ -716,15 +633,13 @@
     {
       "name": "DeepIn",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "Ungit",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Git"
       ]
@@ -732,8 +647,7 @@
     {
       "name": "Gulp",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "NodeJS"
       ]
@@ -741,8 +655,7 @@
     {
       "name": "React",
       "type": "library",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "JavaScript"
       ]
@@ -750,8 +663,7 @@
     {
       "name": "Redis",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Unix"
       ]
@@ -759,8 +671,7 @@
     {
       "name": "Markdown",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "HTML"
       ]
@@ -788,8 +699,7 @@
     {
       "name": "Laravel",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "PHP",
         "Composer"
@@ -798,8 +708,7 @@
     {
       "name": "Babel",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "JavaScript",
         "NodeJS"
@@ -808,8 +717,7 @@
     {
       "name": "Travis CI",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Unix",
         "Git"
@@ -818,8 +726,7 @@
     {
       "name": "Titanium",
       "type": "library",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "JavaScript"
       ]
@@ -827,29 +734,25 @@
     {
       "name": "Affinity Designer",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "Atom",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "WebRTC",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "Apache",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Unix"
       ]
@@ -857,8 +760,7 @@
     {
       "name": "Jekyll",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Ruby",
         "YAML"
@@ -867,8 +769,7 @@
     {
       "name": "Golang",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Algorithmique"
       ]
@@ -876,8 +777,7 @@
     {
       "name": "Make",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Unix"
       ]
@@ -885,8 +785,7 @@
     {
       "name": "Filezilla",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "FTP"
       ]
@@ -894,8 +793,7 @@
     {
       "name": "Vim",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Unix"
       ]
@@ -903,8 +801,7 @@
     {
       "name": "Let's Encrypt",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Unix"
       ]
@@ -912,15 +809,13 @@
     {
       "name": "Internet Explorer",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "ReactNative",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "React"
       ]
@@ -928,31 +823,27 @@
     {
       "name": "NativeScript",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
-        "Angular",
+        "Angular"
       ]
     },
     {
       "name": "PHPStorm",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "Algorithmique",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "VueJS",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "JavaScript"
       ]
@@ -960,15 +851,13 @@
     {
       "name": "Dploy",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "Maildev",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "NodeJS"
       ]
@@ -976,8 +865,7 @@
     {
       "name": "BrowserSync",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "NodeJS"
       ]
@@ -985,8 +873,7 @@
     {
       "name": "Semantic UI",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "CSS"
       ]
@@ -994,15 +881,13 @@
     {
       "name": "Komodo IDE",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "JavaScript",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "HTML",
         "Algorithmique"
@@ -1011,8 +896,7 @@
     {
       "name": "Ruby on Rails",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "SQL",
         "Ruby"
@@ -1021,8 +905,7 @@
     {
       "name": "Prepros",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "SASS"
       ]
@@ -1030,8 +913,7 @@
     {
       "name": "Coda",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "MacOS"
       ]
@@ -1039,8 +921,7 @@
     {
       "name": "Preact",
       "type": "library",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Webpack",
         "JavaScript"
@@ -1049,8 +930,7 @@
     {
       "name": "CoffeeScript",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "JavaScript"
       ]
@@ -1058,8 +938,7 @@
     {
       "name": "Angular",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "TypeScript"
       ]
@@ -1067,15 +946,13 @@
     {
       "name": "Git",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "GitKraken",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Git"
       ]
@@ -1083,8 +960,7 @@
     {
       "name": "CakePHP",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "PHP"
       ]
@@ -1092,8 +968,7 @@
     {
       "name": "Github",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Git"
       ]
@@ -1101,29 +976,53 @@
     {
       "name": "Merise",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
+      "require": []
+    },
+    {
+      "name": "Phinx",
+      "type": "library",
+      "desc": null,
+      "require": [
+        "PHP",
+        "Composer"
+      ]
+    },
+    {
+      "name": "Firebug",
+      "type": "tool",
+      "desc": null,
+      "require": [
+      ]
+    },
+    {
+      "name": "Merise",
+      "type": "tool",
+      "desc": null,
       "require": []
     },
     {
       "name": "After Effects",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "HTML",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
+      "require": []
+    },
+    {
+      "name": "Stripe",
+      "type": "tool",
+      "desc": null,
       "require": []
     },
     {
       "name": "TypeScript",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "JavaScript"
       ]
@@ -1131,15 +1030,13 @@
     {
       "name": "REST",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "Vagrant",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "VirtualBox"
       ]
@@ -1147,8 +1044,7 @@
     {
       "name": "Symfony",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "SQL",
         "Composer",
@@ -1159,8 +1055,7 @@
     {
       "name": "Elixir",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Algorithmique"
       ]
@@ -1168,22 +1063,19 @@
     {
       "name": "MacOS",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "SQL",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "MySQL",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "SQL"
       ]
@@ -1191,8 +1083,7 @@
     {
       "name": "MariaDB",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "SQL"
       ]
@@ -1200,8 +1091,7 @@
     {
       "name": "PostgreSQL",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "SQL"
       ]
@@ -1209,8 +1099,7 @@
     {
       "name": "SQLite",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "SQL"
       ]
@@ -1218,8 +1107,7 @@
     {
       "name": "SourceTree",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Git"
       ]
@@ -1227,22 +1115,19 @@
     {
       "name": "Nodepad++",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "Trello",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "Avocode",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Photoshop"
       ]
@@ -1250,8 +1135,7 @@
     {
       "name": "Socket.io",
       "type": "library",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "NodeJS"
       ]
@@ -1259,8 +1143,7 @@
     {
       "name": "Bootstrap",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "CSS"
       ]
@@ -1268,8 +1151,7 @@
     {
       "name": "MySQL Workbench",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "MySQL"
       ]
@@ -1277,8 +1159,7 @@
     {
       "name": "Sinatra",
       "type": "library",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Ruby"
       ]
@@ -1286,29 +1167,25 @@
     {
       "name": "Netbeans",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "Ubuntu",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "Unix",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "C",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Algorithmique"
       ]
@@ -1316,8 +1193,7 @@
     {
       "name": "C++",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Algorithmique",
         "C"
@@ -1326,8 +1202,7 @@
     {
       "name": "ExpressJS",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "NodeJS"
       ]
@@ -1335,8 +1210,7 @@
     {
       "name": "AdonisJS",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "NodeJS"
       ]
@@ -1344,15 +1218,13 @@
     {
       "name": "MongoDB",
       "type": "tool",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": []
     },
     {
       "name": "C#",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Algorithmique"
       ]
@@ -1360,8 +1232,7 @@
     {
       "name": "ASP.net",
       "type": "framework",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "C#"
       ]
@@ -1369,8 +1240,7 @@
     {
       "name": "Java",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Algorithmique"
       ]
@@ -1378,8 +1248,7 @@
     {
       "name": "Kotlin",
       "type": "language",
-      "description": "",
-      "tutorials": [],
+      "desc": null,
       "require": [
         "Algorithmique"
       ]
