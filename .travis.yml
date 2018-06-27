@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "8"
 script:
-  - yarn
+  - yarn install --silent
   - npm run build
 cache: yarn
 deploy:
