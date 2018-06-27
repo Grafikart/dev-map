@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "npx parcel src/index.html --out-dir docs/",
-    "build": "rm -rf docs && npx parcel build src/index.html --out-dir docs/ --no-source-maps --public-url /dev-map/ && cp src/technologies.json docs/technologies.json"
+    "build": "rm -rf dist && npx parcel build src/index.html --no-source-maps --public-url /dev-map/ && cp src/technologies.json dist/technologies.json"
   },
   "devDependencies": {
     "node-sass": "^4.9.0",

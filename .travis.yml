@@ -4,6 +4,7 @@ node_js:
 script:
   - yarn
   - npm run build
+cache: yarn
 deploy:
   provider: pages
   skip-cleanup: true
