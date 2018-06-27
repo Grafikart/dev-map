@@ -699,7 +699,8 @@
     {
       "name": "Laravel",
       "type": "framework",
-      "desc": null,
+      "desc": "Framework php très populaire pour le développement d'applications web",
+      "tutorials": [],
       "require": [
         "PHP",
         "Composer"
@@ -1044,7 +1045,8 @@
     {
       "name": "Symfony",
       "type": "framework",
-      "desc": null,
+      "desc": "Framework php très populaire pour le développement d'applications web",
+      "tutorials": [],
       "require": [
         "SQL",
         "Composer",
