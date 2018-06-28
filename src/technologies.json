@@ -163,7 +163,7 @@
     {
       "name": "VueResource",
       "type": "library",
-      "desc": null,
+      "desc": "VueResource est un client HTTP pour VueJS",
       "require": [
         "VueJS"
       ]
@@ -211,6 +211,7 @@
       "name": "Ionic",
       "type": "framework",
       "description": "",
+      "desc": null,
       "tutorials": [],
       "require": [
         "TypeScript"
@@ -271,7 +272,6 @@
     {
       "name": "Kibana",
       "type": "tool",
-      "description": "",
       "tutorials": [],
       "require": [
         "Elasticsearch"
@@ -342,14 +342,14 @@
     {
       "name": "InDesign",
       "type": "tool",
-      "desc": "",
+      "desc": "InDesign, développé par Adobe, est un logiciel spécialisé dans la création d'affiches, magazines, brochures, etc..",
       "tutorials": [],
       "require": []
     },
     {
       "name": "Chrome",
       "type": "tool",
-      "desc": "InDesign est un logiciel de PAO",
+      "desc": "Moteur de recherche développé par Google",
       "require": []
     },
     {
@@ -393,7 +393,7 @@
     {
       "name": "Nginx",
       "type": "tool",
-      "desc": null,
+      "desc": "Nginx est un logiciel libre de serveur Web ainsi qu'un proxy inverse",
       "require": [
         "Unix"
       ]
@@ -417,13 +417,13 @@
     {
       "name": "VirtualBox",
       "type": "tool",
-      "desc": null,
+      "desc": "Oracle VM VirtualBox est un logiciel libre de virtualisation publié par Oracle.",
       "require": []
     },
     {
       "name": "Browserify",
       "type": "library",
-      "desc": null,
+      "desc": "Browserify est un outil permettant d'écrire des modules à la manière de NodeJS coté navigateur",
       "require": [
         "NodeJS"
       ]
@@ -451,7 +451,7 @@
     {
       "name": "PHP",
       "type": "language",
-      "desc": null,
+      "desc": "PHP est un langage compilé à la volée. Il est très abordable et permet de créer un site dynamique simplement. ",
       "require": [
         "Algorithmique",
         "HTML"
@@ -460,7 +460,7 @@
     {
       "name": "Meteor",
       "type": "framework",
-      "desc": null,
+      "desc": "Meteor est un framework NodeJS",
       "require": [
         "NodeJS"
       ]
@@ -476,13 +476,13 @@
     {
       "name": "Slides.com",
       "type": "tool",
-      "desc": null,
+      "desc": "Slides.com est un outil permettant de créer des présentations sous forme de diapositives à la manière de PowerPoint",
       "require": []
     },
     {
       "name": "Zend Expressive",
       "type": "framework",
-      "desc": null,
+      "desc": "Zend Expressive est un micro framework PHP",
       "require": [
         "Composer",
         "PHP"
@@ -491,7 +491,7 @@
     {
       "name": "Ruby",
       "type": "language",
-      "desc": null,
+      "desc": "Ruby est un langage de programmation interprété et orienté objet. C'est un langage que l'on retrouvera dans différents outils.",
       "require": [
         "Algorithmique"
       ]
@@ -515,7 +515,7 @@
     {
       "name": "Python",
       "type": "language",
-      "desc": null,
+      "desc": "Python est un langage interprété orienté objet",
       "require": [
         "Algorithmique"
       ]
@@ -597,7 +597,7 @@
     {
       "name": "FTP",
       "type": "tool",
-      "desc": null,
+      "desc": "File Transfer Protocol (protocole de transfert de fichier), ou FTP, est un protocole de communication destiné au partage de fichiers sur un réseau TCP/IP. ",
       "require": []
     },
     {
@@ -619,13 +619,13 @@
     {
       "name": "Brackets",
       "type": "tool",
-      "desc": null,
+      "desc": "Brackets est un éditeur de texte développé par Adobe",
       "require": []
     },
     {
       "name": "VueX",
       "type": "library",
-      "desc": null,
+      "desc": "Vuex est une librairie pour VueJS permettant de gérer facilement vos states",
       "require": [
         "VueJS"
       ]
@@ -679,7 +679,7 @@
     {
       "name": "Slim",
       "type": "framework",
-      "description": "",
+      "desc": "Slim est un micro framework PHP",
       "tutorials": [],
       "require": [
         "Composer",
@@ -689,7 +689,7 @@
     {
       "name": "Lumen",
       "type": "framework",
-      "description": "",
+      "desc": "Lumen est un micro framework PHP inspiré de Laravel",
       "tutorials": [],
       "require": [
         "PHP",
@@ -741,7 +741,7 @@
     {
       "name": "Atom",
       "type": "tool",
-      "desc": null,
+      "desc": "Atom est un éditeur de texte développé par Github",
       "require": []
     },
     {
@@ -770,7 +770,7 @@
     {
       "name": "Golang",
       "type": "language",
-      "desc": null,
+      "desc": "Go est un langage compilé développé par Google",
       "require": [
         "Algorithmique"
       ]
@@ -832,7 +832,7 @@
     {
       "name": "PHPStorm",
       "type": "tool",
-      "desc": null,
+      "desc": "PHPStorm est un IDE de la suite JetBrains spécialisé dans le développeent PHP",
       "require": []
     },
     {
@@ -897,7 +897,7 @@
     {
       "name": "Ruby on Rails",
       "type": "framework",
-      "desc": null,
+      "desc": "Ruby on Rails est un framework web pour le langage Ruby",
       "require": [
         "SQL",
         "Ruby"
@@ -947,7 +947,7 @@
     {
       "name": "Git",
       "type": "tool",
-      "desc": null,
+      "desc": "Git est un outil de versioning",
       "require": []
     },
     {
@@ -1023,7 +1023,7 @@
     {
       "name": "TypeScript",
       "type": "language",
-      "desc": null,
+      "desc": "Le TypeScript est un langage de programmation open-source développé par Microsoft.",
       "require": [
         "JavaScript"
       ]
@@ -1057,7 +1057,7 @@
     {
       "name": "Elixir",
       "type": "language",
-      "desc": null,
+      "desc": "Elixir est un langage de programming fonctionnel développé par Jose Valim",
       "require": [
         "Algorithmique"
       ]
@@ -1145,7 +1145,7 @@
     {
       "name": "Bootstrap",
       "type": "framework",
-      "desc": null,
+      "desc": "Framework CSS développé par Twitter",
       "require": [
         "CSS"
       ]
@@ -1204,7 +1204,7 @@
     {
       "name": "ExpressJS",
       "type": "framework",
-      "desc": null,
+      "desc": "ExpressJS est un micro framework NodeJS pour le développement d'application web",
       "require": [
         "NodeJS"
       ]
@@ -1212,7 +1212,7 @@
     {
       "name": "AdonisJS",
       "type": "framework",
-      "desc": null,
+      "desc": "AdonisJS est un framework NodeJS inspiré de Laravel et Ruby on Rails",
       "require": [
         "NodeJS"
       ]
@@ -1234,7 +1234,7 @@
     {
       "name": "ASP.net",
       "type": "framework",
-      "desc": null,
+      "desc": "Un framework web pour le langage C#",
       "require": [
         "C#"
       ]
