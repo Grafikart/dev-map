@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "8"
+script:
+  - yarn install --silent
+  - npm run build
+cache: yarn
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  local-dir: dist
+  on:
+    branch: master
