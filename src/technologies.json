@@ -1254,6 +1254,22 @@
       "require": [
         "Algorithmique"
       ]
+    },
+    {
+      "name": "Doctrine",
+      "type": "tool",
+      "desc": "Est un ORM (Object Relational Mapper) pour PHP, il permet de faire le lien ou 'mapping' entre vos objets et les éléments de la base de données ",
+      "require": [
+          "PHP"
+      ]
+    },
+    {
+      "name": "Eloquent",
+      "type": "tool",
+      "desc": "Est un ORM (Object Relational Mapper) pour PHP, il permet de faire le lien ou 'mapping' entre vos objets et les éléments de la base de données ",
+      "require": [
+          "PHP"
+      ]
     }
   ]
 }
