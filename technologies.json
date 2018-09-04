@@ -1254,6 +1254,22 @@
       "require": [
         "Algorithmique"
       ]
+    },
+    {
+      "name": "Dart",
+      "type": "language",
+      "desc": "Dart est un langage développé par Google",
+      "require": [
+        "Algorithmique"
+      ]
+    },
+    {
+      "name": "Flutter",
+      "type": "framework",
+      "desc": "Flutter est un framework développé par Google qui permet d'écrire des applications mobiles cross-platform avec le langage Dart.",
+      "require": [
+        "Dart"
+      ]
     }
   ]
 }
