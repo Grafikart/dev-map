@@ -1270,6 +1270,40 @@
       "require": [
         "Dart"
       ]
-    }
+    },
+    {
+      "name": "Django",
+      "type": "framework",
+      "desc": "Django est un framework open-source permettant d'utiliser python dans des projets web",
+      "require": [
+        "Python",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Flask",
+      "type": "framework",
+      "desc": "Flask est un framework open-source permettant d'utiliser python dans des projets web",
+      "require": [
+        "Python",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Sphinx",
+      "type": "tool",
+      "desc": "Sphinx est une librairie permettant de générer de la documentation",
+      "require": [
+        "Python"
+      ]
+    },
+    {
+      "name": "Django Rest Framework",
+      "type": "framework",
+      "desc": "Framework permettant la création d'API REST en python",
+      "require": [
+        "Django",
+      ]
+    },
   ]
 }
