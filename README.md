@@ -1,69 +1,31 @@
-# React + TypeScript + Vite
+# Carte d'apprentissage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce dépôt est un "proof of concept" pour une représentation de l'apprentissage pour une amélioration du site. L'objectif est de montrer rapidement les technologies à apprendre pour un objectif précis
 
-Currently, two official plugins are available:
+[Demo live](https://grafikart.github.io/dev-map/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 👬 Participer
 
-## Expanding the ESLint configuration
+Si vous le souhaitez, vous pouvez participer à ce projet de plusieurs façons :
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- En améliorant le système de rendu en jouant avec le typescript et la librairie ReactFlow (ou le CSS)
+- En modifiant le contenu pour proposer de nouveaux nœuds
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Pour lancer l'application
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+```bash
+bun install
+bun run dev
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Et pour le serveur, si vous voulez persister les changements
+bun server.ts
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💡 Idées / TODO
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- [ ] Comment représenter une connaissance généraliste ?
+- [ ] Comment représenter un noeud carrefour (par exemple l'algorithmique / JavaScript de base / CSS de base)
+- [ ] Comment représenter une connaissance "bonus" et une connaissance nécessaire
+- [ ] Comment représenter la progression d'un utilisateur au sein d'une formation
+- [ ] Comment représenter l'état finit
+- [ ] Mocker l'ouverture d'une formation

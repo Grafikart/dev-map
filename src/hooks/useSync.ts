@@ -1,5 +1,8 @@
 import { useEffect } from "react";
 
+/**
+ * Update the server when the data changes
+ */
 export function useSync(data: Record<string, unknown>) {
   useEffect(() => {
     const timer = setTimeout(async () => {

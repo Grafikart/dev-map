@@ -1,0 +1,24 @@
+export type Vec2 = { x: number; y: number };
+
+const size = 100;
+const angle = Math.PI / 6;
+const width = size * Math.cos(angle);
+const height = size * Math.sin(angle);
+export const snapGrid = [width / 2, height / 2] as [number, number];
+
+export function toIsometric(p: Vec2): Vec2 {
+  // Convert 2D coordinates to isometric projection using 30-degree angle
+  // Isometric projection rotates the coordinate system by 30 degrees
+  // and compresses the depth dimension
+  return {
+    x: (p.x - p.y) * Math.cos(Math.PI / 6),
+    y: (p.x + p.y) * Math.sin(Math.PI / 6),
+  };
+}
+
+export function addVec2(p1: Vec2, p2: Vec2): Vec2 {
+  return {
+    x: p1.x + p2.x,
+    y: p1.y + p2.y,
+  };
+}

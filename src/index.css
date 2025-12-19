@@ -1,14 +1,52 @@
 @import '@xyflow/react/dist/style.css';
 @import "tailwindcss";
 
-.tool-overlay {
-    pointer-events: auto;
+@layer base {
+    img {
+        max-width: none;
+    }
+}
+
+.react-flow {
+    --xy-edge-stroke-width: 2px;
+}
+
+.react-flow__node-default {
+    padding: 0;
+    width: 0;
+}
+
+.react-flow__node:hover .react-flow__handle {
+    opacity: 1;
+}
+
+.react-flow__handle {
+    --size: 20px;
+    opacity: 0;
+    width: var(--size)!important;
+    height: var(--size)!important;
+    top: calc(var(--size) * -0.5)!important;
+    left: calc(var(--size) * -0.5)!important;
+    min-width: 0!important;
+    min-height: 0!important;
+    transform: none!important;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 4;
-    height: 100%;
-    width: 100%;
-    transform-origin: top left;
-    touch-action: none;
+    border: 2px solid oklch(70.4% 0.04 256.788);
+    background: oklch(92.9% 0.013 255.508);
+    bottom:auto!important;
+}
+
+.react-flow__edge-path {
+    stroke-width: 3px;
+    stroke: var(--color-slate-300);
+    stroke-dasharray: 5;
+    animation: dashdraw 0.5s linear infinite;
+}
+
+.text-border {
+    text-shadow:
+            1px 1px 0 #FFF,
+            -1px 1px 0 #FFF,
+            -1px -1px 0 #FFF,
+            1px -1px 0 #FFF;;
 }

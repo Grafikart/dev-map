@@ -1,8 +1,9 @@
 export type Node = {
   id: string;
-  type: string;
+  type?: string;
   data: {
     name: string;
+    logo?: string;
   };
   position: {
     x: number;
