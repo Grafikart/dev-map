@@ -13,8 +13,6 @@ type Props = NodeProps & Node;
 
 const width = Math.round(snapGrid[0] * 2);
 const height = Math.round(snapGrid[1] * 2);
-const titleStyle =
-  "text-lg font-bold absolute -bottom-12 -translate-x-1/2 text-border text-center z-3";
 
 export const FlowNode = memo(({ data, id, selected, type }: Props) => {
   const updateNode = useNodeUpdate();
@@ -39,6 +37,10 @@ export const FlowNode = memo(({ data, id, selected, type }: Props) => {
   const fill = selected
     ? "oklch(89.7% 0.196 126.665)"
     : "var(--color-gray-200)";
+  const titleStyle = clsx(
+    "text-lg font-bold absolute -bottom-12 -translate-x-1/2 text-border text-center z-3",
+    type === "gate" && "text-amber-600",
+  );
 
   return (
     <div className="relative size-[1px]">

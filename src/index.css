@@ -1,6 +1,18 @@
 @import '@xyflow/react/dist/style.css';
 @import "tailwindcss";
 
+.tool-overlay {
+    pointer-events: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    transform-origin: top left;
+    touch-action: none;
+}
+
 @layer base {
     img {
         max-width: none;
@@ -34,6 +46,10 @@
     border: 2px solid oklch(70.4% 0.04 256.788);
     background: oklch(92.9% 0.013 255.508);
     bottom:auto!important;
+}
+
+.react-flow__node .text-lg {
+    transform: rotate(-45deg) skew(15deg, 15deg) scale(1, 1.1) translateX(30px) ;
 }
 
 .react-flow__edge-path {

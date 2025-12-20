@@ -1,5 +1,11 @@
 import { type MouseEventHandler, useMemo } from "react";
-import { ConnectionMode, ReactFlow, useReactFlow } from "@xyflow/react";
+import {
+  ConnectionMode,
+  Controls,
+  MiniMap,
+  ReactFlow,
+  useReactFlow,
+} from "@xyflow/react";
 import { FlowNode } from "../components/flow/FlowNode.tsx";
 import { Lasso } from "../components/Lasso.tsx";
 import { snapGrid } from "../utils/2d.ts";
@@ -76,6 +82,8 @@ export const Builder = () => {
         fitView
         onDoubleClickCapture={onDblClick}
       >
+        <Controls />
+        <MiniMap />
         <IsoBackground
           id="2"
           gap={snapGrid}

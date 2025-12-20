@@ -1,5 +1,11 @@
 import type { Edge, Graph, Node } from "../type.ts";
-import { createContext, useCallback, useContext, useEffect } from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useRef,
+} from "react";
 import {
   addEdge,
   type OnConnect,
@@ -14,6 +20,7 @@ import { url } from "../utils/url.ts";
 export const useGraph = () => {
   const [nodes, setNodes, onNodesChange] = useNodesState<Node>([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState<Edge>([]);
+  const ready = useRef(false);
 
   // Initial fetch
   useEffect(() => {
@@ -28,12 +35,13 @@ export const useGraph = () => {
             deletable: true,
           })),
         );
+        setTimeout(() => (ready.current = true), 2_000);
       });
   }, []);
 
   // Push change to the server everytime a node is updated
   useEffect(() => {
-    if (nodes.length === 0) {
+    if (nodes.length === 0 || !ready.current) {
       return;
     }
     const data = { nodes, edges };
