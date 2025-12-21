@@ -7,7 +7,7 @@
     "dev": "parallel -j 2 --line-buffer ::: 'bun run --watch server.ts' 'bunx vite'",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "check": "tsc --noEmit",
+    "check": "tsc",
     "preview": "vite preview"
   },
   "dependencies": {

@@ -1,4 +1,4 @@
-import { type MouseEventHandler, useMemo } from "react";
+import { type MouseEventHandler, useEffect, useMemo } from "react";
 import { ConnectionMode, ReactFlow, useReactFlow } from "@xyflow/react";
 import { FlowNode } from "../components/flow/FlowNode.tsx";
 import { Lasso } from "../components/Lasso.tsx";
@@ -10,6 +10,8 @@ import { GraphContext, useGraph } from "../hooks/useGraph.ts";
 import { useContextMenu } from "../hooks/useContextMenu.ts";
 import { useKeyDown } from "../hooks/useKeyDown.ts";
 import { FlowEdgeMenu } from "../components/flow/FlowEdgeMenu.tsx";
+import { Course } from "../components/Course.tsx";
+import useToggle from "../hooks/useToggle.tsx";
 
 const nodeTypes = {
   default: FlowNode,
@@ -27,6 +29,8 @@ const edgeTypes = {
 export const Builder = () => {
   const { screenToFlowPosition } = useReactFlow();
   const spacePressed = useKeyDown(" ");
+  const [showCourse, toggleCourse, setCourse] = useToggle(false);
+  const { setCenter } = useReactFlow();
   const {
     updateNode,
     nodes,
@@ -37,6 +41,26 @@ export const Builder = () => {
     updateEdge,
     onConnect,
   } = useGraph();
+
+  useEffect(() => {
+    const listener = (e: any) => {
+      toggleCourse();
+      document.body.classList.add("hide-title");
+      console.log(e.detail);
+      setCenter(
+        e.detail.x + window.innerWidth / 8,
+        e.detail.y + (3 * window.innerHeight) / 16,
+        {
+          duration: 800,
+          zoom: 2,
+        },
+      );
+    };
+    document.addEventListener("nodeclick", listener);
+    return () => {
+      document.removeEventListener("nodeclick", listener);
+    };
+  }, []);
 
   const { node, edge, reset, position, open } = useContextMenu(nodes, edges);
 
@@ -56,6 +80,7 @@ export const Builder = () => {
 
   return (
     <GraphContext value={useMemo(() => ({ updateNode }), [updateNode])}>
+      {showCourse && <Course />}
       <ReactFlow
         maxZoom={2}
         minZoom={0.8}
@@ -83,7 +108,10 @@ export const Builder = () => {
             y: event.clientY,
           });
         }}
-        onPaneClick={reset}
+        onPaneClick={() => {
+          reset();
+          setCourse(false);
+        }}
         deleteKeyCode={"Delete"}
         fitView
         onDoubleClickCapture={onDblClick}

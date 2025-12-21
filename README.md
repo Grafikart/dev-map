@@ -24,8 +24,8 @@ bun server.ts
 ## 💡 Idées / TODO
 
 - [ ] Comment représenter une connaissance généraliste ?
-- [ ] Comment représenter un noeud carrefour (par exemple l'algorithmique / JavaScript de base / CSS de base)
-- [ ] Comment représenter une connaissance "bonus" et une connaissance nécessaire
-- [ ] Comment représenter la progression d'un utilisateur au sein d'une formation
-- [ ] Comment représenter l'état finit
-- [ ] Mocker l'ouverture d'une formation
+- [x] Comment représenter un noeud carrefour (par exemple l'algorithmique / JavaScript de base / CSS de base)
+- [x] Comment représenter une connaissance "bonus" et une connaissance nécessaire
+- [x] Comment représenter la progression d'un utilisateur au sein d'une formation
+- [x] Comment représenter l'état finit
+- [x] Mocker l'ouverture d'une formation

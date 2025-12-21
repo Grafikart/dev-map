@@ -36,12 +36,22 @@ export const FlowNode = memo(({ data, id, selected, type }: Props) => {
   const isCompleted = data.progress === 100;
 
   const titleStyle = clsx(
-    "text-lg font-bold absolute -bottom-12 -translate-x-1/2 text-border text-center z-3",
+    "text-md font-bold absolute -bottom-9 -translate-x-1/2 text-border text-center z-3",
     type === "gate" && "text-amber-600",
   );
 
   return (
     <div
+      // onClick={(e) => {
+      //   document.dispatchEvent(
+      //     new CustomEvent("nodeclick", {
+      //       detail: {
+      //         x: positionAbsoluteX,
+      //         y: positionAbsoluteY,
+      //       },
+      //     }),
+      //   );
+      // }}
       className={clsx(
         "relative size-px",
         isCompleted && "is-completed",
@@ -96,22 +106,28 @@ export const FlowNode = memo(({ data, id, selected, type }: Props) => {
           src={url(`logos/${slugify(data.name)}.svg`)}
         />
       )}
-      {edit ? (
-        <input
-          autoFocus
-          className={clsx(titleStyle, "w-100")}
-          defaultValue={data.name}
-          onChange={onChange}
-          onBlur={toggleEdit}
-        />
-      ) : (
-        <div
-          className={clsx(titleStyle, "w-max", type === "gate" && "isometric")}
-          onClick={toggleEdit}
-        >
-          {data.name}
-        </div>
-      )}
+      <div>
+        {edit ? (
+          <input
+            autoFocus
+            className={clsx(titleStyle, "w-100")}
+            defaultValue={data.name}
+            onChange={onChange}
+            onBlur={toggleEdit}
+          />
+        ) : (
+          <div
+            className={clsx(
+              titleStyle,
+              "w-max",
+              type === "gate" && "isometric",
+            )}
+            onClick={toggleEdit}
+          >
+            {data.name}
+          </div>
+        )}
+      </div>
       {/* @ts-expect-error We are loose, Handle accept no type */}
       <Handle position={Position.Top} className="react-flow__handle" />
     </div>

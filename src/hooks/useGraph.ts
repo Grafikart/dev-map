@@ -48,7 +48,7 @@ export const useGraph = () => {
 
   // Push change to the server everytime a node is updated
   useEffect(() => {
-    if (nodes.length === 0 || !ready.current) {
+    if (nodes.length === 0 || !ready.current || !import.meta.env.DEV) {
       return;
     }
     const data = { nodes, edges };
