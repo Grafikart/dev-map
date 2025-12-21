@@ -1,11 +1,5 @@
 import { type MouseEventHandler, useMemo } from "react";
-import {
-  ConnectionMode,
-  Controls,
-  MiniMap,
-  ReactFlow,
-  useReactFlow,
-} from "@xyflow/react";
+import { ConnectionMode, ReactFlow, useReactFlow } from "@xyflow/react";
 import { FlowNode } from "../components/flow/FlowNode.tsx";
 import { Lasso } from "../components/Lasso.tsx";
 import { snapGrid } from "../utils/2d.ts";
@@ -15,6 +9,20 @@ import { FlowNodeMenu } from "../components/flow/FlowNodeMenu.tsx";
 import { GraphContext, useGraph } from "../hooks/useGraph.ts";
 import { useContextMenu } from "../hooks/useContextMenu.ts";
 import { useKeyDown } from "../hooks/useKeyDown.ts";
+import { FlowEdgeMenu } from "../components/flow/FlowEdgeMenu.tsx";
+
+const nodeTypes = {
+  default: FlowNode,
+  fork: FlowNode,
+  formation: FlowNode,
+  gate: FlowNode,
+};
+
+const edgeTypes = {
+  default: FlowEdge,
+  primary: FlowEdge,
+  secondary: FlowEdge,
+};
 
 export const Builder = () => {
   const { screenToFlowPosition } = useReactFlow();
@@ -26,10 +34,11 @@ export const Builder = () => {
     onNodesChange,
     onEdgesChange,
     addNode,
+    updateEdge,
     onConnect,
   } = useGraph();
 
-  const { node, reset, position, open } = useContextMenu(nodes, edges);
+  const { node, edge, reset, position, open } = useContextMenu(nodes, edges);
 
   const onDblClick: MouseEventHandler = (e) => {
     if ((e.target as HTMLElement).tagName === "INPUT") {
@@ -58,15 +67,15 @@ export const Builder = () => {
         onNodesChange={onNodesChange}
         onEdgesChange={onEdgesChange}
         onConnect={onConnect}
-        nodeTypes={
-          {
-            default: FlowNode,
-            fork: FlowNode,
-            formation: FlowNode,
-            gate: FlowNode,
-          } as any
-        }
-        edgeTypes={{ custom: FlowEdge }}
+        nodeTypes={nodeTypes}
+        edgeTypes={edgeTypes}
+        onEdgeContextMenu={(event, edge) => {
+          event.preventDefault();
+          open(edge.id, {
+            x: event.clientX,
+            y: event.clientY,
+          });
+        }}
         onNodeContextMenu={(event, node) => {
           event.preventDefault();
           open(node.id, {
@@ -75,22 +84,20 @@ export const Builder = () => {
           });
         }}
         onPaneClick={reset}
-        defaultEdgeOptions={{
-          type: "custom",
-        }}
         deleteKeyCode={"Delete"}
         fitView
         onDoubleClickCapture={onDblClick}
       >
-        <Controls />
-        <MiniMap />
-        <IsoBackground
-          id="2"
-          gap={snapGrid}
-          color="oklch(86.9% 0.022 252.894)"
-        />
+        <IsoBackground id="2" gap={snapGrid} color="var(--color-slate-300)" />
         {spacePressed && <Lasso partial />}
       </ReactFlow>
+      {edge && (
+        <FlowEdgeMenu
+          edge={edge}
+          position={position}
+          onEdgeChange={updateEdge}
+        />
+      )}
       {node && (
         <FlowNodeMenu
           node={node}

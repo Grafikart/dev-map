@@ -21,48 +21,86 @@
 
 .react-flow {
     --xy-edge-stroke-width: 2px;
+    --edge-color: var(--color-slate-400);
+    --node-fill: var(--color-slate-100);
+    --node-stroke: var(--color-slate-500);
+}
+
+/*
+* Noeuds
+**/
+.react-flow__node {
+
+    .is-completed, .is-selected {
+        opacity: 1;
+        --node-fill: var(--color-green-300);
+        --node-stroke: var(--color-green-800);
+        --node-stroke-light: var(--color-green-600);
+
+        .text-lg {
+            color: var(--color-green-700);
+        }
+    }
+
+    &:hover .react-flow__handle {
+        opacity: 1;
+    }
 }
 
 .react-flow__node-default {
-    padding: 0;
     width: 0;
-}
-
-.react-flow__node:hover .react-flow__handle {
-    opacity: 1;
+    padding: 0;
 }
 
 .react-flow__handle {
     --size: 20px;
     opacity: 0;
-    width: var(--size)!important;
-    height: var(--size)!important;
-    top: calc(var(--size) * -0.5)!important;
-    left: calc(var(--size) * -0.5)!important;
-    min-width: 0!important;
-    min-height: 0!important;
-    transform: none!important;
+    width: var(--size) !important;
+    height: var(--size) !important;
+    top: calc(var(--size) * -0.5) !important;
+    left: calc(var(--size) * -0.5) !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    transform: none !important;
     position: absolute;
     border: 2px solid oklch(70.4% 0.04 256.788);
     background: oklch(92.9% 0.013 255.508);
-    bottom:auto!important;
+    bottom: auto !important;
 }
 
-.react-flow__node .text-lg {
+.isometric {
     transform: rotate(-45deg) skew(15deg, 15deg) scale(1, 1.1) translateX(30px) ;
 }
 
+/**
+* Edges
+**/
 .react-flow__edge-path {
     stroke-width: 3px;
-    stroke: var(--color-slate-300);
+    stroke: var(--edge-color);
     stroke-dasharray: 5;
-    animation: dashdraw 0.5s linear infinite;
+    animation: dashdraw .5s linear infinite;
+}
+
+.react-flow__edge-secondary .react-flow__edge-path {
+    stroke-width: 2px;
+    stroke: var(--edge-color);
+    opacity: 0.5;
+    animation-duration: 1s;
+}
+
+.react-flow__edge-done {
+    stroke-dasharray: none;
+    stroke: var(--color-green-700)
+}
+
+.react-flow__edge-solid {
+    stroke-dasharray: none;
 }
 
 .text-border {
-    text-shadow:
-            1px 1px 0 #FFF,
-            -1px 1px 0 #FFF,
-            -1px -1px 0 #FFF,
-            1px -1px 0 #FFF;;
+    text-shadow: 1px 1px 0 #FFF,
+    -1px 1px 0 #FFF,
+    -1px -1px 0 #FFF,
+    1px -1px 0 #FFF;;
 }

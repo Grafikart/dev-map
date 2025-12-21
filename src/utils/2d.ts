@@ -1,10 +1,10 @@
 export type Vec2 = { x: number; y: number };
 
-const size = 100;
+const size = 25;
 const angle = Math.PI / 6;
 const width = size * Math.cos(angle);
 const height = size * Math.sin(angle);
-export const snapGrid = [width / 2, height / 2] as [number, number];
+export const snapGrid = [width, height] as [number, number];
 
 export function toIsometric(p: Vec2): Vec2 {
   // Convert 2D coordinates to isometric projection using 30-degree angle

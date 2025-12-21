@@ -28,11 +28,18 @@ export const useGraph = () => {
       .then((r) => r.json() as Promise<Graph>)
       .then((graph) => {
         setNodes(graph.nodes);
+        const nodes = new Map(graph.nodes.map((node) => [node.id, node]));
         setEdges(
           graph.edges.map((e) => ({
             ...e,
             id: `${e.source}-${e.target}`,
             deletable: true,
+            data: {
+              completed:
+                nodes.get(e.source)?.data.progress === 100 &&
+                nodes.get(e.target)?.data.progress === 100,
+              reachable: nodes.get(e.source)?.data.progress === 100,
+            },
           })),
         );
         setTimeout(() => (ready.current = true), 2_000);
@@ -89,6 +96,18 @@ export const useGraph = () => {
       ),
     );
   }, []);
+  const updateEdge = useCallback((edge: { id: string } & Partial<Edge>) => {
+    setEdges((edges) => {
+      return edges.map((e) =>
+        e.id === edge.id
+          ? {
+              ...e,
+              ...edge,
+            }
+          : e,
+      );
+    });
+  }, []);
 
   return {
     nodes,
@@ -97,6 +116,7 @@ export const useGraph = () => {
     onEdgesChange,
     onConnect,
     updateNode,
+    updateEdge,
     addNode,
   };
 };

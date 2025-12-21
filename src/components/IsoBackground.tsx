@@ -18,14 +18,14 @@ function BackgroundComponent({ id, gap, color }: Props) {
   const { transform, patternId } = useStore(selector, shallow);
 
   const scaledOffset: [number, number] = [
-    transform[2] || 1 + gap[0] / 2,
-    transform[2] || 1 + gap[1] / 2,
+    transform[2] || 1 + gap[0],
+    transform[2] || 1 + gap[1],
   ];
 
   const _patternId = `${patternId}${id ? id : ""}`;
   const scaledGap: [number, number] = [
-    gap[0] * transform[2] || 1,
-    gap[1] * transform[2] || 1,
+    2 * gap[0] * transform[2] || 1,
+    2 * gap[1] * transform[2] || 1,
   ];
 
   return (

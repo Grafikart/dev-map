@@ -27,6 +27,19 @@ export function FlowNodeMenu(props: Props) {
       <Button onClick={() => onTypeChange("formation")}>Formation</Button>
       <Button onClick={() => onTypeChange("fork")}>Carrefour</Button>
       <Button onClick={() => onTypeChange("gate")}>Porte</Button>
+      <Button
+        onClick={() =>
+          props.onNodeChange({
+            ...props.node,
+            data: {
+              ...props.node.data,
+              rotate: !props.node.data.rotate,
+            },
+          })
+        }
+      >
+        Rotate
+      </Button>
     </div>
   );
 }

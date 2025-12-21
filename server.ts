@@ -7,7 +7,8 @@ const schema = z.object({
       type: z.string().optional(),
       data: z.object({
         name: z.string(),
-        icon: z.string().optional(),
+        progress: z.number().min(0).max(100).optional(),
+        rotate: z.boolean().optional(),
       }),
       position: z.object({
         x: z.number(),
@@ -19,6 +20,7 @@ const schema = z.object({
     z.object({
       source: z.string(),
       target: z.string(),
+      type: z.string().optional(),
     }),
   ),
 });

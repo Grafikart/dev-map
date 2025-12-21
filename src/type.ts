@@ -3,7 +3,8 @@ export type Node = {
   type?: string;
   data: {
     name: string;
-    logo?: string;
+    progress?: number;
+    rotate?: boolean;
   };
   position: {
     x: number;
@@ -15,6 +16,11 @@ export type Edge = {
   id: string;
   source: string;
   target: string;
+  data: {
+    completed: boolean;
+    reachable: boolean;
+  };
+  type?: string;
 };
 
 export type Graph = {
