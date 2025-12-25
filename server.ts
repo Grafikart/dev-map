@@ -35,6 +35,11 @@ const server = Bun.serve({
         status: 500,
       });
     }
+    // Clean edges to only keep exiting ones
+    const nodeIds = new Set(data.nodes.map((n) => n.id));
+    data.edges = data.edges.filter(
+      (edge) => nodeIds.has(edge.source) && nodeIds.has(edge.target),
+    );
     Bun.write("./public/path.json", JSON.stringify(data, null, 2));
     return new Response("");
   },
